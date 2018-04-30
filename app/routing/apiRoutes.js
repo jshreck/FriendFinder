@@ -45,9 +45,6 @@ module.exports = function (app) {
         });
 
         res.json(bestMatch);
-        // Once you've found the current user's most compatible friend, display the result as a modal pop-up.
-        // The modal should display both the name and picture of the closest match.
-        console.log("bestMatch array at index 0 " + bestMatch[0].name);
     });
 }
 

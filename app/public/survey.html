@@ -170,13 +170,29 @@
             </form>
         </div>
 
-        <!-- MODAL -->
-        <div class="modal">
+
+        <!-- MODAL-->
+        <div id="modal1" class="modal">
             <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Some text in the Modal..</p>
+                <div class="row">
+                    <h3>Your Best Match:</h3>
+                </div>
+                <div class="row">
+                    <div class="col s6 offset-s3">
+                        <div class="card">
+                            <div class="card-image">
+                                <img id="image" src="http://www.awesomelycute.com/gallery/2014/07/awesomelycute-com-3977.jpg">
+                                <span class="card-title black-text" id="displayName">Card Title</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
             </div>
         </div>
+
 
     </div>
 </body>
@@ -187,6 +203,8 @@
     //initialize for selecting options
     $(document).ready(function () {
         $('select').formSelect();
+        $('.modal').modal();
+        $('.modal').modal('open');
     });
 
     $("#submit").on("click", (event) => {
@@ -209,17 +227,12 @@
         //send object 
         var currentURL = window.location.origin;
         $.post(currentURL + "/api/friends", friend, (res) => {
-            console.log(res);
-            //display modal
-            $("modal").css("display", "block");
-            $("modal-content").text(res);
+            $("#displayName").html(res[0].name);
+            $("#image").attr("src", res[0].photo);
+            //display modal -> look at materialize doc
+            $('.modal').modal('open');
             //want to populate modal with text based on res
         });
-    });
-
-    //for closing modal
-    $(".close").on("click", function () {
-        $("#myModal").css("display", "none");
     });
 
 </script>
