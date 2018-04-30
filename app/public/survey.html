@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/js/materialize.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Survey Questions</h2>
+
+        <!-- FORM -->
+        <div class="row">
+            <form class="col s12">
+
+                <h5>About You</h5>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Name" id="name" type="text" class="validate">
+                        <label for="name">Name</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Link to Image" id="photo" type="text" class="validate">
+                        <label for="photo">Link to Image</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h5>1) Question 1</h5>
+                    <div class="input-field col s12">
+                        <select>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>Question 1</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h5>2) Question 2</h5>
+                    <div class="input-field col s12">
+                        <select>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>Question 2</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h5>3) Question 3</h5>
+                    <div class="input-field col s12">
+                        <select>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>Question 3</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h5>4) Question 4</h5>
+                    <div class="input-field col s12">
+                        <select>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>Question 4</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h5>5) Question 5</h5>
+                    <div class="input-field col s12">
+                        <select>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>Question 5</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h5>6) Question 6</h5>
+                    <div class="input-field col s12">
+                        <select>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>Question 6</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h5>7) Question 7</h5>
+                    <div class="input-field col s12">
+                        <select>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>Question 7</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h5>8) Question 8</h5>
+                    <div class="input-field col s12">
+                        <select>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>Question 8</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h5>9) Question 9</h5>
+                    <div class="input-field col s12">
+                        <select>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>Question 9</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h5>10) Question 10</h5>
+                    <div class="input-field col s12">
+                        <select>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>Question 10</label>
+                    </div>
+                </div>
+
+                <button class="btn waves-effect waves-light" type="submit" id="submit" name="action">Submit</button>
+
+            </form>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<!-- JAVASCRIPT -->
+<script type="text/javascript">
+
+    //initialize for selecting options
+    $(document).ready(function () {
+        $('select').formSelect();
+    });
+
+    $("#submit").on("click", (event) => {
+        event.preventDefault();
+
+        //add validation for input
+
+        //make friend object from survey results
+        var friend = {
+            name: $("#name").val().trim(),
+            photo: $("#photo").val().trim(),
+            scores: []
+        };
+
+        //populate the scores with results selected
+        $("select").each((index, value) => {
+            friend.scores.push($(value).val());
+        });
+
+        //send object 
+        var currentURL = window.location.origin;
+        $.post(currentURL + "/api/friends", friend, (res) => {
+            console.log(res);
+            //display modal
+            $("modal").css("display", "block");
+            $("modal-content").text(res);
+            //want to populate modal with text based on res
+        });
+    });
+
+    //for closing modal
+    $(".close").on("click", function () {
+        $("#myModal").css("display", "none");
+    });
+
+</script>
+
+
+</html>
