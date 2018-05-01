@@ -32,6 +32,7 @@ module.exports = function (app) {
                         diff: diff
                     });
                 }
+                //allows more than on best match
                 else if (match.diff === diff) {
                     bestMatch.push(
                         {
